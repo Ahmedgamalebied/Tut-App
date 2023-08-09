@@ -7,7 +7,7 @@ class ColorManager {
   static Color lightGrey = const Color(0xff9E9E9E);
   static Color black = const Color(0xff000000);
 
-  // new colors
+// color Home Screen
   static Color darkPrimary = const Color(0xffd17d11);
   static Color lightPrimary = const Color(0xCCd17d11); // color with 80% opacity
   static Color grey1 = const Color(0xff707070);
