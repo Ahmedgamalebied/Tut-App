@@ -1,7 +1,8 @@
-import 'package:advanced_app/presentation/color_manager.dart';
-import 'package:advanced_app/presentation/font_manager.dart';
-import 'package:advanced_app/presentation/styles_manager.dart';
-import 'package:advanced_app/presentation/values_manager.dart';
+import 'package:advanced_app/presentation/resources/color_manager.dart';
+import 'package:advanced_app/presentation/resources/font_manager.dart';
+import 'package:advanced_app/presentation/resources/styles_manager.dart';
+import 'package:advanced_app/presentation/resources/values_manager.dart';
+
 import 'package:flutter/material.dart';
 
 ThemeData getApplicationTheme() {
@@ -37,7 +38,7 @@ ThemeData getApplicationTheme() {
         style: ElevatedButton.styleFrom(
             textStyle: getRegularStyle(
                 color: ColorManager.white, fontSize: FontSize.s17),
-            primary: ColorManager.primary,
+            backgroundColor: ColorManager.primary,
             shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(AppSize.s12)))),
 
