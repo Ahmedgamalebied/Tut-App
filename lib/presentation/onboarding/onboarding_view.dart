@@ -81,7 +81,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Padding(
-            padding: EdgeInsets.all(AppPadding.p14),
+            padding: const EdgeInsets.all(AppPadding.p14),
             child: GestureDetector(
               child: SizedBox(
                   height: AppSize.s20,
@@ -89,7 +89,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                   child: SvgPicture.asset(ImageAssets.leftArrowIc)),
               onTap: () {
                 _pageController.animateToPage(_getPreviousIndex(),
-                    duration: Duration(
+                    duration: const Duration(
                         milliseconds: AppConstants.sliderAnimationTime),
                     curve: Curves.bounceInOut);
               },
@@ -105,7 +105,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
             ],
           ),
           Padding(
-            padding: EdgeInsets.all(AppPadding.p14),
+            padding: const EdgeInsets.all(AppPadding.p14),
             child: GestureDetector(
               child: SizedBox(
                   height: AppSize.s20,
@@ -113,7 +113,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
                   child: SvgPicture.asset(ImageAssets.rightArrowIc)),
               onTap: () {
                 _pageController.animateToPage(_getNextIndex(),
-                    duration: Duration(
+                    duration: const Duration(
                         milliseconds: AppConstants.sliderAnimationTime),
                     curve: Curves.bounceInOut);
               },
@@ -133,11 +133,11 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
 
   int _getNextIndex() {
-    int NextIndex = ++_currentPageIndex;
-    if (NextIndex == _list.length) {
-      NextIndex = 0;
+    int nextIndex = ++_currentPageIndex;
+    if (nextIndex == _list.length) {
+      nextIndex = 0;
     }
-    return NextIndex;
+    return nextIndex;
   }
 
   Widget _getProperCricle(int index) {
