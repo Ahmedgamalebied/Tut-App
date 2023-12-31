@@ -27,6 +27,14 @@ class OnboardingViewModel extends BaseViewModel
   void onPageChanged(int index) {
     // TODO: implement onPageChanged
   }
+
+  @override
+  // TODO: implement inputSilderViewObject
+  Sink get inputSilderViewObject => throw UnimplementedError();
+
+  @override
+  // TODO: implement outputSilderViewObject
+  Stream get outputSilderViewObject => throw UnimplementedError();
 }
 
 // orders
@@ -34,6 +42,10 @@ abstract mixin class OnboardingViewModelInput {
   void goNext();
   void goPrevious();
   void onPageChanged(int index);
+
+  Sink get inputSilderViewObject;
 }
 
-abstract mixin class OnboardingViewModelOutput {}
+abstract mixin class OnboardingViewModelOutput {
+  Stream get outputSilderViewObject;
+}

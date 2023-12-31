@@ -1,3 +1,4 @@
+import 'package:advanced_app/domain/models.dart';
 import 'package:advanced_app/presentation/resources/assets_manager.dart';
 import 'package:advanced_app/presentation/resources/color_manager.dart';
 import 'package:advanced_app/presentation/resources/constant_manager.dart';
@@ -147,13 +148,6 @@ class _OnBoardingViewState extends State<OnBoardingView> {
       return SvgPicture.asset(ImageAssets.solidCircleIc);
     }
   }
-}
-
-class SliderObject {
-  String title;
-  String subtitle;
-  String image;
-  SliderObject(this.image, this.subtitle, this.title);
 }
 
 class OnBoardingPage extends StatelessWidget {
